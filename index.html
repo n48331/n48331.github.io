@@ -179,7 +179,7 @@
                         <div class="projects__header">
                             <div>
                                 <h3>Selected Work</h3>
-                                <span>(6)</span>
+                                <span>(8)</span>
                             </div>
                             <p>A piece from my selection of favorites</p>
                         </div>
@@ -190,6 +190,20 @@
                                     <p data-splitting class="project__info">Web site for startup with NextJS</p>
                                 </div>
                                 <div class="project__year">/22</div>
+                            </a>
+                            <a target="_blank" href="https://planteuae.com/" target="_blank" data-img="./assets/images/planteuae/planteuae.jpg" class="project">
+                                <div class="project__text">
+                                    <h2 class="project__title">Planteuae</h2>
+                                    <p data-splitting class="project__info">Web page for Plant store with  gallery and contact</p>
+                                </div>
+                                <div class="project__year">/23</div>
+                            </a>
+                            <a target="_blank" href="https://www.nellgram.com/" target="_blank" data-img="./assets/images/nellgram/nellgram.jpg" class="project">
+                                <div class="project__text">
+                                    <h2 class="project__title">Nellgram</h2>
+                                    <p data-splitting class="project__info">Simple Web site for newly launched condiments company</p>
+                                </div>
+                                <div class="project__year">/24</div>
                             </a>
                             <a target="_blank" href="http://foodevide.vercel.app/" target="_blank" data-img="./assets/images/foodevide/foodevide.png" class="project">
                                 <div class="project__text">
@@ -366,8 +380,9 @@
                                         fill="currentColor"></path>
                                 </svg>
                             </div>
-                        </a>
+                        </a>                
                     </div>
+                    
                 </section>
             </main>
             <footer class="footer">
@@ -375,7 +390,11 @@
                     <div class="footer__grid">
                         <div class="footer__copy">
                             <span>© </span>
-                            <span id="footerYear">2023</span>
+                            <span id="footerYear"></span>
+                            <script>
+                                const currentYear = new Date().getFullYear();
+                                document.getElementById("footerYear").textContent = currentYear;
+                            </script>
                             <span>All Rights Reserved. Design &amp; Coded with ❤️️</span>
                         </div>
                         <ul class="footer__links">
@@ -402,6 +421,9 @@
                         <div class="footer__back">Back to top ↑</div>
                     </div>
                 </div>
+                <a class="easter__egg" href="./eg.html">
+                    <img src="./assets/images/favicon.ico" alt="">
+                </a>
             </footer>
         </div>
     </div>
