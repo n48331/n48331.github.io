@@ -40,6 +40,7 @@
         gtag('js', new Date());
         gtag('config', 'G-F2ZVXRFLB4');
     </script>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body data-barba="wrapper">
@@ -92,20 +93,28 @@
                 <section class="services">
                     <div class="wrapper">
                         <div class="services__header">
-                            <h2>Site building in progress. Until then stay Happy!!! 😃</h2>
+                            <!-- <h2>Site building in progress. Until then stay Happy!!! 😃</h2> -->
+                            <h2>FoH (Formula of 😃)</h2>
                         </div>
-                   
+                        <div class="content" id="points">
+                            <p>Embrace the imperfections</p>
+                        </div>
                     </div>
                 </section>
-            
-             
-            
             </main>
-         
         </div>
     </div>
     <script src="assets/js/bundle.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="./assets/js/FoH.js"></script>
+    <script>
+        const points = document.getElementById('points');
+        data.forEach((point, index) => {
+            const p = document.createElement('p');
+            p.innerHTML = point;
+            points.appendChild(p);
+        });
+    </script>
 </body>
 
 </html>

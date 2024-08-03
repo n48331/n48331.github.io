@@ -1,0 +1,19 @@
+.services .wrapper .content{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; */
+    
+}
+.services .wrapper .content p{
+    font-size: 1.2rem;
+    margin: 10px 0;
+    line-height: 1.8;
+    font-weight: 400;
+    text-align: justify;
+    border: 1px solid #f1f1f1;
+    max-width: fit-content;
+    padding: 0 15px;
+    border-radius: 50px;
+    float: left;
+}

@@ -1,0 +1,26 @@
+const data = [
+    "Dont expect anything from anyone",
+    "Embrace the imperfections",
+    "Beaty is in the eye of the beholder",
+    "Not, no one likes me, it's no one is like me",
+    "Gift yourself for your self improvements",
+    "Self-love, Self-care. don't do things for others if it has no outcome. Efforts must be equal from both sides.",
+    "Breaking comfort zone",
+    "Master the art of letting go",
+    "Don't be sorry for others mistakes, apologize only when you feel like that apology is worth giving",
+    "Do what you sacred to do",
+    "All we have is now, enjoy the moment",
+    "Sometimes doing favour to someone you love will make you happy as well as them",
+    "Everyone is on their own race and winning. No point in comparing each other.",
+    "Einstein relativity theory - your time is personal to yourself ",
+    "Newton - if you want to get somewhere in life you'll have to leave something behind",
+    "Make others happy unconditionally",
+    "Create memories for others",
+    "Enjoy observing humans experiencing/living life for the first time in their own way.",
+    "Life is good when you are happy, but much better when others are happy",
+    "yppah uoy ekam lliw ekil uoy sgniht wen gnidnif ylgnisirprus",
+    "You can't have the same moment twice",
+    "Talk to your parents",
+    "Choose your career based upon only your own interest/ passion/influence"
+]
+
