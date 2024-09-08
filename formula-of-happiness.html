@@ -114,6 +114,27 @@
             p.innerHTML = point;
             points.appendChild(p);
         });
+        const toggleTheme = document.getElementById('toggleTheme');
+        const h2Elements = document.querySelectorAll('.services .wrapper .content h2');
+        function changeBorder(color){
+            h2Elements.forEach(h2 => {
+                h2.style.border = `1px solid ${color}`;
+            });
+        }
+        changeBorder('#f1f1f1');
+        toggleTheme.addEventListener('change', () => {
+            if (toggleTheme.checked) {
+                h2Elements.forEach(h2 => {
+                    h2.style.border = '1px solid #f1f1f1';
+                });
+            } else {
+                h2Elements.forEach(h2 => {
+                    h2.style.border = '1px solid #333';
+                });
+            }
+        });
+    
+
     </script>
 </body>
 
