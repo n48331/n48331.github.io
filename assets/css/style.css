@@ -1,13 +1,6 @@
-.services .wrapper .content{
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; */
-    
-}
-.services .wrapper .content p{
-    font-size: 1.2rem;
-    margin: 10px 0;
+
+.services .wrapper .content h2{
+    margin: 10px 5px;
     line-height: 1.8;
     font-weight: 400;
     text-align: justify;

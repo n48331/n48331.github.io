@@ -96,8 +96,8 @@
                             <!-- <h2>Site building in progress. Until then stay Happy!!! 😃</h2> -->
                             <h2>FoH (Formula of 😃)</h2>
                         </div>
-                        <div class="content" id="points">
-                            <p>Embrace the imperfections</p>
+                        <div class="content" id="points" >
+                          
                         </div>
                     </div>
                 </section>
@@ -110,7 +110,7 @@
     <script>
         const points = document.getElementById('points');
         data.forEach((point, index) => {
-            const p = document.createElement('p');
+            const p = document.createElement('h2');
             p.innerHTML = point;
             points.appendChild(p);
         });
