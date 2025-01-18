@@ -21,6 +21,10 @@ const data = [
     "yppah uoy ekam lliw ekil uoy sgniht wen gnidnif ylgnisirprus",
     "You can't have the same moment twice",
     "Talk to your parents",
-    "Choose your career based upon only your own interest/ passion/influence"
+    "Choose your career based upon only your own interest/ passion/influence",
+    "Don't be afraid to ask for help",
+    "Sleep",
+    "Don't be afraid to say no",
+    
 ]
 
