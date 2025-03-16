@@ -2,6 +2,8 @@ const data = [
     "Dont expect anything from anyone",
     "Embrace the imperfections",
     "Beauty is in the eye of the beholder",
+    "No matter how much you try, you can only understand 10% of a person",
+    "Don't be afraid to be yourself",
     "Not, no one likes me, it's no one is like me",
     "Gift yourself for your self improvements",
     "Self-love, Self-care. don't do things for others if it has no outcome. Efforts must be equal from both sides.",
