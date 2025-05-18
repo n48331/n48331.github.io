@@ -25,13 +25,11 @@ const displayCharacters = (characters) => {
   const htmlString = characters
     .map((character) => {
       return `
-            <li class="character">
+            <li class="character" data-hold-link data-ph="${character.ph}">
               <img src="${character.image}"></img>
                 <h2>
                     ${character.name}
-                    <span data-hold-link data-ph="${character.ph}" >
                     ${character.over}
-                    </span>
                     </h2>
                     <p>${character.dateOfBirth}</p>
             </li>
