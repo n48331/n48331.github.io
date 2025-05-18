@@ -35,132 +35,160 @@ const data = [
   {
     name: "Nabeel",
     dob: { mm: month.Nov, mmstr: "Nov", dd: 14 },
+    ph:8136927418
   },
   {
     name: "Finu",
     dob: { mm: month.Nov, mmstr: "Nov", dd: 13 },
+    ph:9037272418
   },
   {
     name: "Becki",
     dob: { mm: month.Dec, mmstr: "Dec", dd: 1 },
+    ph:8179638315
   },
   {
     name: "Anjun",
     dob: { mm: month.July, mmstr: "July", dd: 1 },
+    ph:9947966342
   },
   {
     name: "Nawaf",
     dob: { mm: month.Sept, mmstr: "Sept", dd: 20 },
+    ph:9895716467
   },
   {
     name: "Shaheef",
     dob: { mm: month.May, mmstr: "May", dd: 19 },
+    ph:8593911127
   },
   {
     name: "Saurav",
     dob: { mm: month.Nov, mmstr: "Nov", dd: 2 },
+    ph:7337357314
   },
   {
     name: "Arjun",
     dob: { mm: month.June, mmstr: "Jun", dd: 16 },
+    ph:8921414125
   },
   {
     name: "Alan",
     dob: { mm: month.Jan, mmstr: "Jan", dd: 3 },
+    ph:9072542506
   },
   {
     name: "Melbin",
     dob: { mm: month.Dec, mmstr: "Dec", dd: 26 },
+    ph:9207669032
   },
   {
     name: "Sandesh",
     dob: { mm: month.Jan, mmstr: "Jan", dd: 17 },
+    ph:7902566567
   },
   {
     name: "Ujwal",
     dob: { mm: month.Oct, mmstr: "Oct", dd: 24 },
+    ph:8138888424
   },
   {
     name: "Nafi",
     dob: { mm: month.Oct, mmstr: "Oct", dd: 25 },
+    ph:7034422814
   },
   {
     name: "Arun",
     dob: { mm: month.Oct, mmstr: "Oct", dd: 31 },
+    ph:9020504104
   },
   {
     name: "Shameer",
     dob: { mm: month.Feb, mmstr: "Feb", dd: 10 },
+    ph:9072388838
   },
   {
     name: "Shahabas",
     dob: { mm: month.July, mmstr: "Jul", dd: 3 },
+    ph:8075973450
   },
   {
     name: "Minhaj",
     dob: { mm: month.April, mmstr: "April", dd: 15 },
+    ph:7907055939
   },
   {
     name: "Fidha",
     dob: { mm: month.Nov, mmstr: "Nov", dd: 22 },
+    ph:8606079967
   },
   {
     name: "Navas",
     dob: { mm: month.Jan, mmstr: "Jan", dd: 3 },
+    ph:9633181418
   },
   {
     name: "Aseeb",
     dob: { mm: month.Jan, mmstr: "Jan", dd: 13 },
+    ph:9072352899
   },
   {
     name: "Deekshita",
     dob: { mm: month.Jan, mmstr: "Jan", dd: 13 },
+    ph:555
   },
   {
     name: "Fouz",
     dob: { mm: month.Dec, mmstr: "Dec", dd: 4 },
+    ph:9207833360
   },
   {
     name: "Nihal",
     dob: { mm: month.Dec, mmstr: "Dec", dd: 9 },
+    ph:9605967551
   },
   {
     name: "Thaniya",
     dob: { mm: month.Dec, mmstr: "Dec", dd: 22 },
+    ph:555
   },
   {
     name: "Famraz",
     dob: { mm: month.April, mmstr: "April", dd: 18 },
+    ph:9495484391
   },
   
   {
     name: "Aflah",
     dob: { mm: month.July, mmstr: "July", dd: 17 },
+    ph:7736952527
   },
 
   {
     name: "Azeem",
     dob: { mm: month.Nov, mmstr: "Nov", dd: 8 },
+    ph:7736744198
   },
   {
     name: "Shiril",
     dob: { mm: month.Aug, mmstr: "Aug", dd: 14 },
+    ph:8714872114
   },
-  {
-    name: "Fidha",
-    dob: { mm: month.Nov, mmstr: "Nov", dd: 22 },
-  },
+ 
   {
     name: "Thanu",
     dob: { mm: month.April, mmstr: "April", dd: 28 },
+    ph:555
   },
   {
     name: "Sufail",
     dob: { mm: month.May, mmstr: "May", dd: 20 },
+    ph:9562026070
   },
   {
     name: "Nisha",
     dob: { mm: month.Sept, mmstr: "Sept", dd: 24 },
+    ph:8547507152
   },
 ];
 
@@ -176,6 +204,7 @@ for (let i = 0; i < data.length; i++) {
     image: imageLink + `?seed=${data[i].name}${data[i].name}`,
     over: isDay(setDay(data[i].dob.mm, data[i].dob.dd)),
     day: setDay(data[i].dob.mm, data[i].dob.dd),
+    ph:data[i].ph
   });
 }
 

@@ -29,7 +29,9 @@ const displayCharacters = (characters) => {
               <img src="${character.image}"></img>
                 <h2>
                     ${character.name}
+                    <a href="https://wa.me/91${character.ph}" target="_blank">
                     ${character.over}
+                    </a>
                     </h2>
                     <p>${character.dateOfBirth}</p>
             </li>
