@@ -187,7 +187,7 @@ const data = [
   },
   {
     name: "Nisha",
-    dob: { mm: month.Sept, mmstr: "Sept", dd: 24 },
+    dob: { mm: month.Oct, mmstr: "Oct", dd: 24 },
     ph:8547507152
   },
 ];
