@@ -23,14 +23,14 @@
     <meta property="twitter:description"
         content="Full Stack Developer specialized in UI/UX design, Webflow and Front End Development.">
     <meta property="twitter:image" content="http://mnabeel.in/logo.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon.ico">
     <!-- <link rel="manifest" href="https://todordimov.com/assets/favicon/site.webmanifest"> -->
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="preload" href="/assets/fonts/PPMori-Regular.woff" as="font" type="font/woff" crossorigin>
-    <link rel="stylesheet" href="assets/css/bundle.css">
+    <link rel="stylesheet" href="/assets/css/bundle.css">
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F2ZVXRFLB4"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -40,7 +40,6 @@
         gtag('js', new Date());
         gtag('config', 'G-F2ZVXRFLB4');
     </script>
-    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body data-barba="wrapper">
@@ -63,9 +62,9 @@
                     <nav class="nav">
                         <a href="/" class="nav__logo header__item">M Nabeel</a>
                         <div class="nav__links">
-                            <a href="./index.html" class="nav__link js--nav-link header__item text-link">Home</a>
-                            <a href="./diverse-lives.html" class="nav__link js--nav-link header__item text-link">Diverse Lives</a>
-                            <a href="./formula-of-happiness.html" class="nav__link js--nav-link header__item text-link">Formula of Happiness</a>
+                            <a href="/" class="nav__link js--nav-link header__item text-link">Home</a>
+                            <a href="/diverse-lives" class="nav__link js--nav-link header__item text-link">Diverse Lives</a>
+                            <a href="/formula-of-happiness" class="nav__link js--nav-link header__item text-link">Formula of Happiness</a>
                             
                         </div>
                         <label class="nav__theme header__item">
@@ -93,49 +92,136 @@
                 <section class="services">
                     <div class="wrapper">
                         <div class="services__header">
-                            <!-- <h2>Site building in progress. Until then stay Happy!!! 😃</h2> -->
-                            <h2>FoH (Formula of 😃)</h2>
-                            <p>Advice and quotes collected from various types of people from different walks of life, sharing what keeps them happy.</p>
+                            <h2>Cheat Code to Success</h2>
+                            <div style="display: flex; gap: 10px; margin-top: 2rem; flex-wrap: wrap; align-items: center;">
+                                <input 
+                                    type="text" 
+                                    id="cheatCode" 
+                                    placeholder="Enter your cheat code"
+                                    style="
+                                        background: transparent;
+                                        border: none;
+                                        border-bottom: 1px solid rgba(17,20,20,0.2);
+                                        padding: 10px 0;
+                                        font-size: 1.0626em;
+                                        font-family: 'PP Mori', sans-serif;
+                                        color: inherit;
+                                        outline: none;
+                                        flex: 1;
+                                        min-width: 200px;
+                                        transition: border-color 0.2s;
+                                    "
+                                >
+                                <button 
+                                    id="submit"
+                                    style="
+                                        background: transparent;
+                                        border: 1px solid rgba(17,20,20,0.2);
+                                        padding: 10px 20px;
+                                        font-size: 1.0626em;
+                                        font-family: 'PP Mori', sans-serif;
+                                        color: inherit;
+                                        cursor: pointer;
+                                        transition: all 0.2s;
+                                    "
+                                >Submit</button>
+                            </div>
+                            <p id="message" style="margin-top: 1.5rem; font-size: 1.0626em; opacity: 0; transition: opacity 0.3s;"></p>
                         </div>
-                        <div class="content" id="points" >
-                          
-                        </div>
+                   
                     </div>
                 </section>
+            
+             
+          
             </main>
+         
         </div>
     </div>
-    <script src="assets/js/bundle.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="./assets/js/FoH.js"></script>
+    <script src="/assets/js/bundle.js"></script>
+    <script src="/assets/js/app.js"></script>
     <script>
-        const points = document.getElementById('points');
-        data.forEach((point, index) => {
-            const p = document.createElement('h2');
-            p.innerHTML = point;
-            points.appendChild(p);
-        });
-        const toggleTheme = document.getElementById('toggleTheme');
-        const h2Elements = document.querySelectorAll('.services .wrapper .content h2');
-        function changeBorder(color){
-            h2Elements.forEach(h2 => {
-                h2.style.border = `1px solid #333`;
-            });
-        }
-        changeBorder('#f1f1f1');
-        toggleTheme.addEventListener('change', () => {
-            if (toggleTheme.checked) {
-                h2Elements.forEach(h2 => {
-                    h2.style.border = '1px solid #f1f1f1';
-                });
+        const humorousMessages = [
+            "Nope, that's not it! Try again, detective 🕵️",
+            "Wrong code! The universe is laughing at your attempt 😄",
+            "Nice try, but nope! Maybe next time? 🤷",
+            "That code doesn't exist in this dimension! 🌌",
+            "Wrong! But hey, at least you're persistent! 💪",
+            "Nah, that's not the one. Keep guessing! 🎲",
+            "Incorrect! But don't worry, even Einstein got things wrong sometimes 🧠",
+            "Wrong code! The cheat code gods are not pleased 🙄",
+            "Nope! But I appreciate your optimism! ✨",
+            "That's a hard no from the code validator! ❌"
+        ];
+
+        // Update input and button styles based on dark mode
+        function updateInputStyles() {
+            const input = document.getElementById('cheatCode');
+            const button = document.getElementById('submit');
+            const isDark = document.body.classList.contains('dark-mode');
+            
+            if (isDark) {
+                input.style.borderBottomColor = 'rgba(239,239,239,0.2)';
+                button.style.borderColor = 'rgba(239,239,239,0.2)';
+                
+                // Update focus and hover handlers
+                input.onfocus = function() { this.style.borderBottomColor = 'rgba(239,239,239,0.5)'; };
+                input.onblur = function() { this.style.borderBottomColor = 'rgba(239,239,239,0.2)'; };
+                button.onmouseover = function() { 
+                    this.style.borderColor = 'rgba(239,239,239,0.5)'; 
+                    this.style.backgroundColor = 'rgba(239,239,239,0.05)'; 
+                };
+                button.onmouseout = function() { 
+                    this.style.borderColor = 'rgba(239,239,239,0.2)'; 
+                    this.style.backgroundColor = 'transparent'; 
+                };
             } else {
-                h2Elements.forEach(h2 => {
-                    h2.style.border = '1px solid #333';
-                });
+                input.style.borderBottomColor = 'rgba(17,20,20,0.2)';
+                button.style.borderColor = 'rgba(17,20,20,0.2)';
+                
+                // Update focus and hover handlers
+                input.onfocus = function() { this.style.borderBottomColor = 'rgba(17,20,20,0.5)'; };
+                input.onblur = function() { this.style.borderBottomColor = 'rgba(17,20,20,0.2)'; };
+                button.onmouseover = function() { 
+                    this.style.borderColor = 'rgba(17,20,20,0.5)'; 
+                    this.style.backgroundColor = 'rgba(17,20,20,0.05)'; 
+                };
+                button.onmouseout = function() { 
+                    this.style.borderColor = 'rgba(17,20,20,0.2)'; 
+                    this.style.backgroundColor = 'transparent'; 
+                };
+            }
+        }
+
+        // Watch for dark mode changes
+        const observer = new MutationObserver(updateInputStyles);
+        observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+        updateInputStyles();
+
+        document.getElementById('submit').addEventListener('click', function() {
+            const input = document.getElementById('cheatCode');
+            const message = document.getElementById('message');
+            
+            // Always show a humorous wrong message
+            const randomMessage = humorousMessages[Math.floor(Math.random() * humorousMessages.length)];
+            message.textContent = randomMessage;
+            message.style.opacity = '1';
+            
+            // Clear input
+            input.value = '';
+            
+            // Fade out after 3 seconds
+            setTimeout(() => {
+                message.style.opacity = '0';
+            }, 3000);
+        });
+
+        // Also handle Enter key
+        document.getElementById('cheatCode').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.getElementById('submit').click();
             }
         });
-    
-
     </script>
 </body>
 

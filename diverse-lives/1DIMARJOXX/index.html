@@ -23,14 +23,14 @@
     <meta property="twitter:description"
         content="Full Stack Developer specialized in UI/UX design, Webflow and Front End Development.">
     <meta property="twitter:image" content="http://mnabeel.in/logo.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon.ico">
     <!-- <link rel="manifest" href="https://todordimov.com/assets/favicon/site.webmanifest"> -->
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="preload" href="/assets/fonts/PPMori-Regular.woff" as="font" type="font/woff" crossorigin>
-    <link rel="stylesheet" href="assets/css/bundle.css">
+    <link rel="stylesheet" href="/assets/css/bundle.css">
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F2ZVXRFLB4"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -62,9 +62,9 @@
                     <nav class="nav">
                         <a href="/" class="nav__logo header__item">M Nabeel</a>
                         <div class="nav__links">
-                            <a href="./index.html" class="nav__link js--nav-link header__item text-link">Home</a>
-                            <a href="./diverse-lives.html" class="nav__link js--nav-link header__item text-link">Diverse Lives</a>
-                            <a href="./formula-of-happiness.html" class="nav__link js--nav-link header__item text-link">Formula of Happiness</a>
+                            <a href="/" class="nav__link js--nav-link header__item text-link">Home</a>
+                            <a href="/diverse-lives" class="nav__link js--nav-link header__item text-link">Diverse Lives</a>
+                            <a href="/formula-of-happiness" class="nav__link js--nav-link header__item text-link">Formula of Happiness</a>
                             
                         </div>
                         <label class="nav__theme header__item">
@@ -92,108 +92,137 @@
                 <section class="services">
                     <div class="wrapper">
                         <div class="services__header">
-                            <h2>Collected stories and advices</h2>
-                        </div>
-                        <div class="services__list">
-                            <div class="services__item" id="01" style="cursor: pointer;"
-                            onclick="window.location.href = './diverse-lives.html';"
-                            >
-                                <span>01</span>
-                                <h2>Diverse lifes</h2>
-                                <p>
-                                    Stories of the people I've met, about their character and personality.</p>
-                                <p></p>
+                            <h2>Cheat Code to Success</h2>
+                            <div style="display: flex; gap: 10px; margin-top: 2rem; flex-wrap: wrap; align-items: center;">
+                                <input 
+                                    type="text" 
+                                    id="cheatCode" 
+                                    placeholder="Enter your cheat code"
+                                    style="
+                                        background: transparent;
+                                        border: none;
+                                        border-bottom: 1px solid rgba(17,20,20,0.2);
+                                        padding: 10px 0;
+                                        font-size: 1.0626em;
+                                        font-family: 'PP Mori', sans-serif;
+                                        color: inherit;
+                                        outline: none;
+                                        flex: 1;
+                                        min-width: 200px;
+                                        transition: border-color 0.2s;
+                                    "
+                                >
+                                <button 
+                                    id="submit"
+                                    style="
+                                        background: transparent;
+                                        border: 1px solid rgba(17,20,20,0.2);
+                                        padding: 10px 20px;
+                                        font-size: 1.0626em;
+                                        font-family: 'PP Mori', sans-serif;
+                                        color: inherit;
+                                        cursor: pointer;
+                                        transition: all 0.2s;
+                                    "
+                                >Submit</button>
                             </div>
-                       
-                            <div class="services__item" id="02" style="cursor: pointer;"
-                            onclick="window.location.href = './formula-of-happiness.html';"
-                            >
-                             
-
-                                  <span>02</span>
-                                  <h2>Formula of happiness</h2>
-                                  <p>Advices and Quotes Collected from variuos types of people.</p>
-                            
-                            </div>
-                            <!-- <div class="services__item">
-                                <span>03</span>
-                                <h2>The Full Package</h2>
-                                <p>Get the best of both worlds for your website, capture your brand identity and get
-                                    fully functional features.</p>
-                            </div> -->
-                           
+                            <p id="message" style="margin-top: 1.5rem; font-size: 1.0626em; opacity: 0; transition: opacity 0.3s;"></p>
                         </div>
+                   
                     </div>
                 </section>
             
              
-                <section class="cta">
-                    <div class="wrapper">
-                        <div class="cta__content">
-                            <div class="cta__image">
-                                <img src="./assets/images/profile/profile.jpg" alt="M Nabeel | Full Stack Developer">
-                            </div>
-                            <h3>Let’s talk about a project, collaboration or an idea you may have</h3>
-                        </div>
-                        <a href="mailto:dev.mnabeel@gmail.com" class="button">
-                            <span class="button__text">Drop me a line</span>
-                            <div class="button__icon">
-                                <div class="button__icon__bg"></div>
-                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-                                    <path
-                                        d="m7.012 18.069 9.702-9.702v7.298l1.499.028-.014-8.81-1.132-1.132-8.81-.014.028 1.499h7.298L5.88 16.937l1.131 1.132Z"
-                                        fill="currentColor"></path>
-                                </svg>
-                            </div>
-                        </a>                
-                    </div>
-                    
-                </section>
+          
             </main>
-            <footer class="footer">
-                <div class="wrapper">
-                    <div class="footer__grid">
-                        <div class="footer__copy">
-                            <span>© </span>
-                            <span id="footerYear"></span>
-                            <script>
-                                const currentYear = new Date().getFullYear();
-                                document.getElementById("footerYear").textContent = currentYear;
-                            </script>
-                            <span>All Rights Reserved. Design &amp; Coded with ❤️️</span>
-                        </div>
-                        <ul class="footer__links">
-                           
-                            <li>
-                                <a href="http://github.com/n48331" target="_blank"
-                                    class="text-link">Github</a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/n48331/" target="_blank"
-                                    class="text-link">Linkedin</a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/n48331_" target="_blank"
-                                    class="text-link">Instagram</a>
-                            </li>
-                            <li>
-                                <a href="https://dribbble.com/n48331_" target="_blank" class="text-link">Dribbble</a>
-                            </li>
-                            <li>
-                                <a href="mailto:dev.mnabeel@gmail.com" target="_blank" class="text-link">Email</a>
-                            </li>
-                        </ul>
-                        <div class="footer__back">Back to top ↑</div>
-                    </div>
-                </div>
-                <a class="easter__egg" href="./eg.html">
-                    <img src="./assets/images/favicon.ico" alt="">
-                </a>
-            </footer>
+         
         </div>
     </div>
-    <script src="assets/js/bundle.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="/assets/js/bundle.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script>
+        const humorousMessages = [
+            "Nope, that's not it! Try again, detective 🕵️",
+            "Wrong code! The universe is laughing at your attempt 😄",
+            "Nice try, but nope! Maybe next time? 🤷",
+            "That code doesn't exist in this dimension! 🌌",
+            "Wrong! But hey, at least you're persistent! 💪",
+            "Nah, that's not the one. Keep guessing! 🎲",
+            "Incorrect! But don't worry, even Einstein got things wrong sometimes 🧠",
+            "Wrong code! The cheat code gods are not pleased 🙄",
+            "Nope! But I appreciate your optimism! ✨",
+            "That's a hard no from the code validator! ❌"
+        ];
+
+        // Update input and button styles based on dark mode
+        function updateInputStyles() {
+            const input = document.getElementById('cheatCode');
+            const button = document.getElementById('submit');
+            const isDark = document.body.classList.contains('dark-mode');
+            
+            if (isDark) {
+                input.style.borderBottomColor = 'rgba(239,239,239,0.2)';
+                button.style.borderColor = 'rgba(239,239,239,0.2)';
+                
+                // Update focus and hover handlers
+                input.onfocus = function() { this.style.borderBottomColor = 'rgba(239,239,239,0.5)'; };
+                input.onblur = function() { this.style.borderBottomColor = 'rgba(239,239,239,0.2)'; };
+                button.onmouseover = function() { 
+                    this.style.borderColor = 'rgba(239,239,239,0.5)'; 
+                    this.style.backgroundColor = 'rgba(239,239,239,0.05)'; 
+                };
+                button.onmouseout = function() { 
+                    this.style.borderColor = 'rgba(239,239,239,0.2)'; 
+                    this.style.backgroundColor = 'transparent'; 
+                };
+            } else {
+                input.style.borderBottomColor = 'rgba(17,20,20,0.2)';
+                button.style.borderColor = 'rgba(17,20,20,0.2)';
+                
+                // Update focus and hover handlers
+                input.onfocus = function() { this.style.borderBottomColor = 'rgba(17,20,20,0.5)'; };
+                input.onblur = function() { this.style.borderBottomColor = 'rgba(17,20,20,0.2)'; };
+                button.onmouseover = function() { 
+                    this.style.borderColor = 'rgba(17,20,20,0.5)'; 
+                    this.style.backgroundColor = 'rgba(17,20,20,0.05)'; 
+                };
+                button.onmouseout = function() { 
+                    this.style.borderColor = 'rgba(17,20,20,0.2)'; 
+                    this.style.backgroundColor = 'transparent'; 
+                };
+            }
+        }
+
+        // Watch for dark mode changes
+        const observer = new MutationObserver(updateInputStyles);
+        observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+        updateInputStyles();
+
+        document.getElementById('submit').addEventListener('click', function() {
+            const input = document.getElementById('cheatCode');
+            const message = document.getElementById('message');
+            
+            // Always show a humorous wrong message
+            const randomMessage = humorousMessages[Math.floor(Math.random() * humorousMessages.length)];
+            message.textContent = randomMessage;
+            message.style.opacity = '1';
+            
+            // Clear input
+            input.value = '';
+            
+            // Fade out after 3 seconds
+            setTimeout(() => {
+                message.style.opacity = '0';
+            }, 3000);
+        });
+
+        // Also handle Enter key
+        document.getElementById('cheatCode').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.getElementById('submit').click();
+            }
+        });
+    </script>
 </body>
 
 </html>
