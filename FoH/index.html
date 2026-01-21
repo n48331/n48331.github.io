@@ -65,7 +65,7 @@
                         <div class="nav__links">
                                 <a href="/" class="nav__link js--nav-link header__item text-link">Home</a>
                             <a href="/diverse-lives" class="nav__link js--nav-link header__item text-link">Diverse Lives</a>
-                            <a href="/formula-of-happiness" class="nav__link js--nav-link header__item text-link">Formula of Happiness</a>
+                            <a href="/FoH" class="nav__link js--nav-link header__item text-link">Formula of Happiness</a>
                             
                         </div>
                         <label class="nav__theme header__item">
@@ -113,6 +113,34 @@
         data.forEach((point, index) => {
             const p = document.createElement('h2');
             p.innerHTML = point;
+
+            if (index === 2) {
+                p.setAttribute('role', 'link');
+                p.setAttribute('tabindex', '0');
+                p.setAttribute('aria-label', 'Download image');
+                p.style.cursor = 'pointer';
+
+                const downloadImagePath = '/assets/images/share1.png';
+                const fileName = 'share1.png';
+
+                const triggerDownload = () => {
+                    const downloadLink = document.createElement('a');
+                    downloadLink.href = downloadImagePath;
+                    downloadLink.download = fileName;
+                    document.body.appendChild(downloadLink);
+                    downloadLink.click();
+                    document.body.removeChild(downloadLink);
+                };
+
+                p.addEventListener('click', triggerDownload);
+                p.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        triggerDownload();
+                    }
+                });
+            }
+
             points.appendChild(p);
         });
         const toggleTheme = document.getElementById('toggleTheme');
