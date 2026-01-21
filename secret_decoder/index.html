@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Decoder | Visual Cryptography</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Secret Decoder</h1>
+            <p class="subtitle">Because apparently, your secrets are too spicy for a simple password.</p>
+        </header>
+
+        <div class="upload-grid">
+            <div class="upload-box" id="drop-1">
+                <span class="icon">📁</span>
+                <p>Dump Share 1 here</p>
+                <input type="file" id="input-1" accept="image/*">
+                <div class="preview" id="preview-1"></div>
+            </div>
+            <div class="upload-box" id="drop-2">
+                <span class="icon">📁</span>
+                <p>And Share 2 goes here</p>
+                <input type="file" id="input-2" accept="image/*">
+                <div class="preview" id="preview-2"></div>
+            </div>
+            <div class="upload-box" id="drop-3">
+                <span class="icon">📁</span>
+                <p>Last one, don't mess it up</p>
+                <input type="file" id="input-3" accept="image/*">
+                <div class="preview" id="preview-3"></div>
+            </div>
+        </div>
+
+        <div class="result-section">
+            <h2>The Moment of Truth</h2>
+            <div class="result-container" id="result-container">
+                <p class="placeholder-text">Waiting for you to figure out how to upload all three...</p>
+                <canvas id="result-canvas"></canvas>
+            </div>
+            <button id="download-btn" class="btn-download">Snatch the Secret</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
