@@ -110,7 +110,113 @@
     <script src="../assets/js/FoH.js"></script>
     <script>
         const points = document.getElementById('points');
+        const insertInputAtIndex = 5; // Insert input in the middle
+        
         data.forEach((point, index) => {
+            // Insert input field pill in the middle
+            if (index === insertInputAtIndex) {
+                const inputPill = document.createElement('div');
+                inputPill.style.margin = '10px 5px';
+                inputPill.style.lineHeight = '1.8';
+                inputPill.style.fontWeight = '400';
+                inputPill.style.maxWidth = 'fit-content';
+                inputPill.style.padding = '0 15px';
+                inputPill.style.borderRadius = '50px';
+                inputPill.style.float = 'left';
+                inputPill.style.border = '1px solid #333';
+                inputPill.style.display = 'flex';
+                inputPill.style.alignItems = 'center';
+                inputPill.style.gap = '10px';
+                inputPill.style.position = 'relative';
+                inputPill.style.height = '50px';
+                
+                const secretNumber = document.createElement('input');
+                secretNumber.type = 'number';
+                secretNumber.id = 'secret-number';
+                secretNumber.placeholder = 'The probability of two random people meeting is nearly zero';
+                // secretNumber.defaultValue = '0.00';
+                secretNumber.style.border = 'none';
+                secretNumber.style.outline = 'none';
+                secretNumber.style.background = 'transparent';
+                secretNumber.style.fontSize = 'inherit';
+                secretNumber.style.fontFamily = 'inherit';
+                secretNumber.style.fontWeight = 'inherit';
+                secretNumber.style.color = 'inherit';
+                secretNumber.style.width = '550px';
+                secretNumber.style.padding = '0';
+                
+                const secretImage = document.createElement('div');
+                secretImage.id = 'secret-image';
+                secretImage.style.width = '40px';
+                secretImage.style.height = '40px';
+                secretImage.style.borderRadius = '50%';
+                secretImage.style.overflow = 'hidden';
+                secretImage.style.flexShrink = '0';
+                secretImage.style.display = 'none';
+                secretImage.style.cursor = 'pointer';
+                secretImage.setAttribute('role', 'button');
+                secretImage.setAttribute('tabindex', '0');
+                secretImage.setAttribute('aria-label', 'Download secret image');
+                
+                inputPill.appendChild(secretNumber);
+                inputPill.appendChild(secretImage);
+                points.appendChild(inputPill);
+                
+                // Initially hide the image container
+                secretImage.style.display = 'none';
+                
+                // Download functionality for the revealed image
+                const downloadSecretImage = () => {
+                    const downloadImagePath = '/assets/images/share2.png';
+                    const fileName = 'share2.png';
+                    const downloadLink = document.createElement('a');
+                    downloadLink.href = downloadImagePath;
+                    downloadLink.download = fileName;
+                    document.body.appendChild(downloadLink);
+                    downloadLink.click();
+                    document.body.removeChild(downloadLink);
+                };
+                
+                secretImage.addEventListener('click', downloadSecretImage);
+                secretImage.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        downloadSecretImage();
+                    }
+                });
+                
+                secretNumber.addEventListener('input', () => {
+                    const inputValue = parseFloat(secretNumber.value);
+                    
+                    // Only show the image when value is less than 0.001
+                    if (!isNaN(inputValue) && inputValue <= 0.001 && inputValue > 0) {
+                        secretImage.style.backgroundImage = `url(/assets/images/share2.png)`;
+                        secretImage.style.backgroundSize = 'cover';
+                        secretImage.style.backgroundPosition = 'center';
+                        secretImage.style.backgroundRepeat = 'no-repeat';
+                        secretImage.style.display = 'block';
+                    } else {
+                        // Hide the image when condition is not met
+                        secretImage.style.display = 'none';
+                    }
+                });
+                
+                // Update border color on theme toggle
+                const updateInputBorder = () => {
+                    const toggleTheme = document.getElementById('toggleTheme');
+                    if (toggleTheme && toggleTheme.checked) {
+                        inputPill.style.border = '1px solid #f1f1f1';
+                    } else {
+                        inputPill.style.border = '1px solid #333';
+                    }
+                };
+                updateInputBorder();
+                const toggleTheme = document.getElementById('toggleTheme');
+                if (toggleTheme) {
+                    toggleTheme.addEventListener('change', updateInputBorder);
+                }
+            }
+            
             const p = document.createElement('h2');
             p.innerHTML = point;
 
@@ -162,8 +268,6 @@
                 });
             }
         });
-    
-
     </script>
 </body>
 
