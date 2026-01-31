@@ -6196,8 +6196,14 @@
       i.a.hooks.after(() => {
         nt.update(), nt.scrollTo(0, 0);
       }),
-      i.a.hooks.afterEnter(() => {
+      i.a.hooks.afterEnter(({ next: t }) => {
         window.scrollTo(0, 0);
+        t.container.querySelectorAll("script").forEach((s) => {
+          const n = document.createElement("script");
+          (n.text = s.text),
+            Array.from(s.attributes).forEach((a) => n.setAttribute(a.name, a.value)),
+            s.parentNode.replaceChild(n, s);
+        });
       }),
       i.a.init({
         debug: !0,

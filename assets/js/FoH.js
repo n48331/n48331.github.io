@@ -1,4 +1,4 @@
-const data = [
+var data = [
     "Don't expect anything from anyone.",
     "Embrace imperfections.",
     "Beauty is in the eye of the beholder.",

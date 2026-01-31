@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>M Nabeel | Full Stack Developer</title>
-    <meta name="description" content="Full Stack Developer specialized in UI/UX design, Webflow and Front End Development.">
+    <meta name="description"
+        content="Full Stack Developer specialized in UI/UX design, Webflow and Front End Development.">
     <meta name="author" content="http://mnabeel.in/">
     <meta name="robots" content="index, follow">
     <meta name="keywords"
@@ -63,9 +64,11 @@
                         <a href="/" class="nav__logo header__item">M Nabeel</a>
                         <div class="nav__links">
                             <a href="/" class="nav__link js--nav-link header__item text-link">Home</a>
-                            <a href="/diverse-lives" class="nav__link js--nav-link header__item text-link">Diverse Lives</a>
-                            <a href="/FoH" class="nav__link js--nav-link header__item text-link">Formula of Happiness</a>
-                            
+                            <a href="/diverse-lives" class="nav__link js--nav-link header__item text-link">Diverse
+                                Lives</a>
+                            <a href="/FoH" class="nav__link js--nav-link header__item text-link">Formula of
+                                Happiness</a>
+
                         </div>
                         <label class="nav__theme header__item">
                             <div class="nav__theme__icon">
@@ -88,20 +91,157 @@
                 </div>
             </header>
             <main>
-         
+
+                <style>
+                    .route-grid {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                        gap: 20px;
+                        padding: 40px 0;
+                    }
+
+                    .route-button {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 24px 32px;
+                        background-color: #111414;
+                        color: #efefef !important;
+                        border-radius: 16px;
+                        transition: all 0.3s cubic-bezier(.5, .7, .4, 1);
+                        text-decoration: none;
+                        font-size: 1.25em;
+                        font-weight: 400;
+                        border: 1px solid transparent;
+                    }
+
+                    .route-button span {
+                        color: inherit;
+                    }
+
+                    .route-button:hover {
+                        transform: translateY(-4px);
+                        background-color: #efefef;
+                        color: #111414 !important;
+                        border-color: #111414;
+                    }
+
+                    .route-arrow {
+                        width: 24px;
+                        height: 24px;
+                        transition: transform 0.3s cubic-bezier(.5, .7, .4, 1);
+                    }
+
+                    .route-button:hover .route-arrow {
+                        transform: translateX(4px);
+                    }
+
+                    body.dark-mode .route-button {
+                        background-color: #efefef;
+                        color: #111414 !important;
+                    }
+
+                    body.dark-mode .route-button span {
+                        color: #111414;
+                    }
+
+                    body.dark-mode .route-button:hover {
+                        background-color: #111414;
+                        color: #efefef !important;
+                        border-color: #efefef;
+                    }
+
+                    body.dark-mode .route-button:hover span {
+                        color: #efefef;
+                    }
+
+                    @media screen and (max-width: 767px) {
+                        .route-grid {
+                            grid-template-columns: 1fr;
+                        }
+                    }
+                </style>
                 <section class="services">
                     <div class="wrapper">
                         <div class="services__header">
-                            <h2>Will be searching for you shortly. Stay tuned.</h2>
+                            <h2>Diverse Lives Routes</h2>
                         </div>
-                   
+                        <div class="route-grid" id="routeGrid">
+                            <a href="/diverse-lives/1DIMARJOXX" class="route-button">
+                                <span>1DIMARJOXX</span>
+                                <svg class="route-arrow" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="/diverse-lives/1DIMSFLOOX" class="route-button">
+                                <span>1DIMSFLOOX</span>
+                                <svg class="route-arrow" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="/diverse-lives/2DIMFMRZOXX" class="route-button">
+                                <span>2DIMFMRZOXX</span>
+                                <svg class="route-arrow" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="/diverse-lives/2DIMMLBNOOXX" class="route-button">
+                                <span>2DIMMLBNOOXX</span>
+                                <svg class="route-arrow" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="/diverse-lives/2DIMUJWLOOX" class="route-button">
+                                <span>2DIMUJWLOOX</span>
+                                <svg class="route-arrow" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="/diverse-lives/3DIMSHMR0XX" class="route-button">
+                                <span>3DIMSHMR0XX</span>
+                                <svg class="route-arrow" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="/diverse-lives/UDIMNJLOOM" class="route-button">
+                                <span>UDIMNJLOOM</span>
+                                <svg class="route-arrow" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <script>
+                            (function () {
+                                const grid = document.getElementById('routeGrid');
+                                if (grid) {
+                                    const buttons = Array.from(grid.children);
+                                    for (let i = buttons.length - 1; i > 0; i--) {
+                                        const j = Math.floor(Math.random() * (i + 1));
+                                        [buttons[i], buttons[j]] = [buttons[j], buttons[i]];
+                                    }
+                                    buttons.forEach(button => grid.appendChild(button));
+                                }
+                            })();
+                        </script>
                     </div>
                 </section>
-            
-             
-          
+
             </main>
-         
+
         </div>
     </div>
     <script src="/assets/js/bundle.js"></script>
