@@ -93,20 +93,25 @@
                     </section>
                 </div>
             </main>
+            <script>
+                (function () {
+                    const trigger = document.getElementById('downloadTrigger');
+                    if (trigger) {
+                        trigger.addEventListener('click', () => {
+                            const link = document.createElement('a');
+                            link.href = '/diverse-lives/UDIMNJLOOM/44-232/share-NJL.png';
+                            link.download = 'share-NJL.png';
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        });
+                    }
+                })();
+            </script>
         </div>
     </div>
     <script src="/assets/js/bundle.js"></script>
     <script src="/assets/js/app.js"></script>
-    <script>
-        document.getElementById('downloadTrigger').addEventListener('click', () => {
-            const link = document.createElement('a');
-            link.href = '/assets/images/share-NJL.png';
-            link.download = 'share-NJL.png';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        });
-    </script>
 </body>
 
 </html>
